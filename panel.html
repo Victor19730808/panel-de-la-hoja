@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Panel de la hoja</title>
+  <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 16px;
+      color: #1a1a1a;
+      font: 15px/1.4 "Segoe UI", sans-serif;
+    }
+    h1 { margin: 0 0 8px; font-size: 18px; }
+    p { margin: 0 0 12px; }
+    button {
+      appearance: none;
+      border: 0;
+      background: #107c41;
+      color: white;
+      font: inherit;
+      padding: 8px 12px;
+      cursor: pointer;
+    }
+    button:disabled { opacity: 0.45; cursor: not-allowed; }
+    #estado { min-height: 3em; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <h1>Panel de la hoja</h1>
+  <p>Este panel corre dentro de Excel. El botón escribe una frase en la celda A1.</p>
+  <button id="escribir" type="button" disabled>Escribir en la hoja</button>
+  <p id="estado" role="status">Cargando Excel…</p>
+  <script src="panel.js"></script>
+</body>
+</html>
