@@ -14,24 +14,24 @@
     }
     h1 { margin: 0 0 8px; font-size: 18px; }
     p { margin: 0 0 12px; }
-    button {
-      appearance: none;
-      border: 0;
-      background: #107c41;
-      color: white;
+    label { display: block; margin: 0 0 6px; font-weight: 600; }
+    select {
+      width: 100%;
+      box-sizing: border-box;
       font: inherit;
-      padding: 8px 12px;
-      cursor: pointer;
+      padding: 8px;
     }
-    button:disabled { opacity: 0.45; cursor: not-allowed; }
     #estado { min-height: 3em; font-weight: 600; }
   </style>
 </head>
 <body>
   <h1>Panel de la hoja</h1>
-  <p>Concanaco. Carga las promociones del directorio en la hoja activa.</p>
-  <button id="cargar" type="button" disabled>Cargar promociones</button>
+  <p>Bancos que devuelve la API, en el campo name.</p>
+  <label for="bancos">Banco</label>
+  <select id="bancos" disabled>
+    <option value="">Cargando bancos…</option>
+  </select>
   <p id="estado" role="status">Cargando Excel…</p>
-  <script src="panel.js?v=promos1"></script>
+  <script src="panel.js?v=bancos1"></script>
 </body>
 </html>
