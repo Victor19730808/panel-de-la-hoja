@@ -1,7 +1,7 @@
 const combo = document.querySelector("#bancos");
 const estado = document.querySelector("#estado");
 
-const API = "http://127.0.0.1:3080/sp/cliente?accion=listar";
+const API = "https://127.0.0.1:3443/sp/cliente?accion=listar";
 
 function decir(texto) {
   estado.textContent = texto;
